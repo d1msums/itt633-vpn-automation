@@ -68,7 +68,6 @@ The template follows the group's supplied manual router configurations. Nine loc
 - `preview.py`: offline preview entry point.
 - `test_deploy.py`: local tests, including simulated connection and partial-deployment failures.
 - `requirements.txt`: Python dependencies.
-- `README_SYAHMI.md`: detailed Windows lab handoff instructions.
 
 ## Lab prerequisites
 
