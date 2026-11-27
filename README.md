@@ -1,4 +1,5 @@
-<h1 align="center">🔐 ITT633 — IPsec VPN Automation</h1>
+<h1 align="center">🔐 ITT633: Python-Based Deployment and Verification of a
+Site-to-Site IPsec VPN</h1>
 
 <p align="center">
   <strong><em>Python Automation for Secure Headquarters-to-Branch Connectivity</em></strong>
