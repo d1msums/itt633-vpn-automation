@@ -20,7 +20,7 @@ The intended protected traffic path is PC-A -> R1 -> ISP -> R2 -> PC-B, with enc
 
 ### Where to find the files
 
-- **[GNS3A FILES](https://drive.google.com/drive/folders/17XaOv7ST13VQTleBFFjlIGdAJMaN2yV2)** contains `ITT633_Clean_Baseline.gns3project`, `ITT633_MANUAL_VPN.gns3project`, `R1_MANUAL VPN CONFIG.txt` and `R2 MANUAL VPN CONFIGURATION.txt`. Use the clean baseline for automation trials and the manual VPN project as the manual reference. Configuration exports may contain credentials: do not copy them directly into GitHub.
+- **[GNS3A FILES](https://drive.google.com/drive/folders/17XaOv7ST13VQTleBFFjlIGdAJMaN2yV2)** contains `ITT633_Clean_Baseline.gns3project`, `ITT633_MANUAL_VPN.gns3project`, `R1_MANUAL VPN CONFIG.txt` and `R2 MANUAL VPN CONFIGURATION.txt`. The GNS3 project files are stored in this Drive folder rather than in this repository: use the clean baseline for automation trials and the manual VPN project as the manual reference. The folder also holds the R1/R2 manual configuration files. If sanitised configuration files are included in this GitHub repository, use those for public documentation and keep credential-bearing originals in Drive.
 - **[VPN Automation Deployment](https://drive.google.com/drive/folders/1HHBe39INT3iOcPWBcgI1LAFGo_WxDH4m)** contains `ITT633_Automation.zip` and `README_SYAHMI.md`, the deployment handoff package and instructions. Check the package version against this repository before running a trial.
 - **[VPN Verification](https://drive.google.com/drive/folders/119CFqLdhxbQdeTu18pONOXM7nYWrbDXl)** contains `verify.py`, `report_results.py`, its own `inventory.yaml`, `requirements.txt`, README and local development outputs. Keep its inventory separate from the deployment inventory until their schemas have been reconciled. Folders labelled `dummy test_reports` and `dummy final_local_test` contain development examples, not live lab evidence. `__pycache__` is not needed for sharing.
 - **[PRE-IPSEC VPN](https://drive.google.com/drive/folders/1BSzFT5gbyow4fSj4WBvtywlMpeOY90CV)** contains screenshots labelled for initial addressing, SSH, local/WAN/management connectivity, routing and the pre-VPN state.
@@ -147,6 +147,7 @@ Add only actual, labelled and sanitised results. Do not commit credentials, priv
 - [Cisco IOS XE 16.8 FlexVPN and IKEv2 guide](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book.pdf)
 
 AI assistance was used during development. Group members must review, understand and validate the implementation and report actual outcomes.
+
 
 
 
