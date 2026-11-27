@@ -1,6 +1,41 @@
-# ITT633: IPsec VPN Automation
+<h1 align="center">🔐 ITT633 — IPsec VPN Automation</h1>
+
+<p align="center">
+  <strong><em>Python Automation for Secure Headquarters-to-Branch Connectivity</em></strong>
+</p>
+<p align="center">
+  <strong>ITT633 Network Automation Group Project</strong><br>
+  <em>Configure · Deploy · Verify · Document</em>
+</p>
+
+<p align="center">
+  <a href="https://drive.google.com/drive/folders/1ZHm2lVKo7zREB6UgLldnr5i8v4OFODHI"><img alt="Project resources — Open Drive" src="https://img.shields.io/badge/PROJECT_RESOURCES-OPEN_DRIVE-22c55e?style=for-the-badge&amp;labelColor=172b36"></a>
+  <a href="https://drive.google.com/drive/folders/17XaOv7ST13VQTleBFFjlIGdAJMaN2yV2"><img alt="GNS3 lab — Project files" src="https://img.shields.io/badge/GNS3_LAB-PROJECT_FILES-0891b2?style=for-the-badge&amp;labelColor=172b36"></a><br>
+  <a href="https://drive.google.com/drive/folders/1HHBe39INT3iOcPWBcgI1LAFGo_WxDH4m"><img alt="Automation — Deployment" src="https://img.shields.io/badge/AUTOMATION-DEPLOYMENT-2563eb?style=for-the-badge&amp;labelColor=172b36"></a>
+  <a href="https://drive.google.com/drive/folders/119CFqLdhxbQdeTu18pONOXM7nYWrbDXl"><img alt="VPN — Verification" src="https://img.shields.io/badge/VPN-VERIFICATION-7c3aed?style=for-the-badge&amp;labelColor=172b36"></a>
+  <a href="https://drive.google.com/drive/folders/1flZ4yWAGp2Pfmj3AC3P0KxS9KVwuCNgY"><img alt="Testing — Evidence" src="https://img.shields.io/badge/TESTING-EVIDENCE-0f766e?style=for-the-badge&amp;labelColor=172b36"></a>
+</p>
+
+<br>
+
+<p align="center"><strong>Python · Netmiko · YAML · Jinja2 · Cisco IOS XE · GNS3</strong></p>
+<p align="center">IKEv2 &amp; IPsec · Configuration Deployment · Fault Detection · Network Verification</p>
+
+---
+
+## Overview
 
 Python configuration generation and SSH deployment for an HQ-to-branch IPsec VPN in GNS3. The lab uses two Cisco CSR1000v routers, an ISP transit router and a separate management network.
+
+<p align="center">
+  <a href="#network-topology">Topology</a> ·
+  <a href="#shared-lab-resources-google-drive">Lab Resources</a> ·
+  <a href="#windows-setup">Windows Setup</a> ·
+  <a href="#linux--docker-auto-setup">Docker Setup</a> ·
+  <a href="#deployment">Deployment</a> ·
+  <a href="#evidence-index">Test Evidence</a> ·
+  <a href="#team-responsibilities">Team</a>
+</p>
 
 ## Network topology
 
@@ -146,8 +181,4 @@ Add only actual, labelled and sanitised results. Do not commit credentials, priv
 - [Cisco IOS XE 16.8 FlexVPN and IKEv2 guide](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book.pdf)
 
 AI assistance was used during development. Group members must review, understand and validate the implementation and report actual outcomes.
-
-
-
-
 
