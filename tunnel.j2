@@ -1,0 +1,40 @@
+! {{ name }} - VPN configuration derived from the supplied manual lab
+crypto ikev2 proposal NUSALINK-PROPOSAL
+ encryption aes-cbc-256
+ integrity sha256
+ group 14
+exit
+crypto ikev2 policy NUSALINK-POLICY
+ proposal NUSALINK-PROPOSAL
+exit
+crypto ikev2 keyring NUSALINK-KEYRING
+ peer {{ peer_name }}
+  address {{ peer.wan.ip }}
+  pre-shared-key local {{ vpn_psk }}
+  pre-shared-key remote {{ vpn_psk }}
+ exit
+exit
+crypto ikev2 profile NUSALINK-IKEV2
+ match identity remote address {{ peer.wan.ip }} 255.255.255.255
+ identity local address {{ local.wan.ip }}
+ authentication remote pre-share
+ authentication local pre-share
+ keyring local NUSALINK-KEYRING
+exit
+crypto ipsec transform-set NUSALINK-TRANSFORM esp-aes 256 esp-sha256-hmac
+ mode tunnel
+exit
+crypto ipsec profile NUSALINK-IPSEC
+ set transform-set NUSALINK-TRANSFORM
+ set ikev2-profile NUSALINK-IKEV2
+exit
+interface {{ interfaces.tunnel }}
+ description IPSEC-VPN-TO-{{ peer_name }}
+ ip address {{ local.tunnel.ip }} {{ local.tunnel.netmask }}
+ tunnel source {{ interfaces.wan }}
+ tunnel destination {{ peer.wan.ip }}
+ tunnel mode ipsec ipv4
+ tunnel protection ipsec profile NUSALINK-IPSEC
+ no shutdown
+exit
+ip route {{ peer.lan.network.network_address }} {{ peer.lan.netmask }} {{ interfaces.tunnel }} {{ peer.tunnel.ip }}

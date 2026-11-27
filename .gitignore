@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+runs/
+.env
+*.log
+*.pyc
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*.qcow2
+*.vdi
+*.vmdk
+*.ova
+*.iso
+*.gns3project
