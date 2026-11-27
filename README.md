@@ -1,4 +1,4 @@
-<h1 align="center">🔐ITT633 Group Project: IPsec VPN Automation</h1>
+<h1 align="center">🔐IPsec VPN Automation</h1>
 
 <p align="center">
   <strong><em>Python Automation for Secure Headquarters-to-Branch Connectivity</em></strong>
